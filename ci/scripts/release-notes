@@ -226,7 +226,6 @@ sub calculate_software_updates {
 			'name' => 'releases'
 		}
 	];
-
 	my $default_section = (map {$_->{name}} grep {$_->{default}} @$sections)[0] || '-';
 	delete $upstream->{sections};
 
